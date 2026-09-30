@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hello World!</title>
+    <title>Learning the Terminal</title>
+    <meta charset="UTF-8">
     <script src='validate.js'></script>
 </head>
 <body>
     <header>
-        <h1>Hello World!</h1>
+        <h1>Introduction to the Terminal</h1>
     </header>
     <main>
         <section>
-            <h2>About Me</h2>
-            <p>This is my first web page.</p>
+            <h2>What is the Terminal?</h2>
+            <p>
+                The terminal (also called the command line or shell) is a powerful tool for interacting with your computer using text commands.
+            </p>
+        </section>
+        <section>
+            <h2>Why Learn the Terminal?</h2>
+            <ul>
+                <li>Fast file management</li>
+                <li>Automate tasks</li>
+                <li>Remote server access</li>
+                <li>Many developer tools require it</li>
+            </ul>
+        </section>
+        <section>
+            <h2>How to Open the Terminal</h2>
+            <ol>
+                <li>
+                    <strong>Windows:</strong> Press <kbd>Windows</kbd> + <kbd>R</kbd>, type <kbd>cmd</kbd>, and press <kbd>Enter</kbd>.
+                </li>
+                <li>
+                    <strong>macOS:</strong> Open <kbd>Spotlight</kbd> (<kbd>Cmd</kbd> + <kbd>Space</kbd>), type <kbd>Terminal</kbd>, and press <kbd>Enter</kbd>.
+                </li>
+                <li>
+                    <strong>Linux:</strong> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>.
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Common Terminal Commands</h2>
+            <ul>
+                <li><code>pwd</code> — Print working directory</li>
+                <li><code>ls</code> — List files and folders</li>
+                <li><code>cd</code> — Change directory</li>
+                <li><code>mkdir</code> — Make new directory</li>
+                <li><code>touch</code> — Create empty file</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Code Example</h2>
+            <p>Here is how you can create a folder, move into it, and create a file:</p>
+            <pre><code>
+mkdir my_folder
+cd my_folder
+touch hello.txt
+            </code></pre>
+            <p>
+                Here’s what an HTML heading looks like in code:
+            </p>
+            <pre><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></pre>
+        </section>
+        <section>
+            <h2>Sample Session</h2>
+            <p>Run the following command to see a list of files:</p>
+            <pre><code>ls</code></pre>
+            <p>Example output:</p>
+            <samp>hello.txt</samp>
+        </section>
+        <section>
+            <h2>How to Exit</h2>
+            <p>Type <kbd>exit</kbd> and press <kbd>Enter</kbd> to close the terminal.</p>
         </section>
     </main>
     <footer>
@@ -19,3 +79,5 @@
     </footer>
 </body>
 </html>
+
+
