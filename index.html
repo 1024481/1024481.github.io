@@ -1,9 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6fb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2em 0 1em 0;
+      text-align: center;
+    }
+    #hobbies {
+      margin: 3em auto;
+      max-width: 700px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(44,62,80,0.08);
+      padding: 2em 1em 2em 1em;
+      text-align: center;
+    }
+    #hobbies h2 {
+      margin-bottom: 1.2em;
+    }
+    .hobby-list {
+      display: flex;
+      justify-content: center;
+      gap: 3em;
+      flex-wrap: wrap;
+    }
+    .hobby-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+      padding: 0.8em 1em;
+      border-radius: 10px;
+    }
+    .hobby-item:hover {
+      background: #f0f4ff;
+      transform: scale(1.1) rotate(-5deg);
+      box-shadow: 0 2px 8px rgba(52, 69, 99, 0.10);
+    }
+    .hobby-item img {
+      width: 56px;
+      height: 56px;
+      transition: transform 0.3s;
+      margin-bottom: 0.6em;
+    }
+    .hobby-item span {
+      font-size: 1.08em;
+      margin-top: 0.3em;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+    nav {
+      margin: 2em auto;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 1em;
+    }
+    nav a {
+      color: #1a237e;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #3949ab;
+    }
+    @media (max-width: 600px) {
+      .hobby-list {
+        flex-direction: column;
+        gap: 1.5em;
+      }
+      nav li {
+        display: block;
+        margin-bottom: 0.8em;
+      }
+    }
+  </style>
+</head>
 <body>
-  <h1>My Personal Website</h1>
-  
-  <p>From exploring vast digital landscapes with a controller in hand to tracking the best local fishing spots in the real world. Here, you will find my write-ups, logs, and thoughts covering my dual passions of video games and fishing.</p>
-  
-  <p>For today's warmup, I found this inspiring website: <a href="https://www.troutandfeather.com/fly-fishing">Trout and Feather</a>.</p>
-  
-  <p>I really like this site because it feels like a genuine personal journal of fishing adventures[span_0](start_span)[span_0](end_span). The author shares great stories and practical tips, and the layout makes it easy to read about their different trips[span_1](start_span)[span_1](end_span).</p>
+  <header>
+    <h1>My Personal Website</h1>
+    <p>From exploring vast digital landscapes with a controller in hand to traveling through real-life adventures, I love sharing my experiences and inspirations.</p>
+  </header>
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobby-list">
+      <div class="hobby-item">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3ae.png" alt="Gaming Controller" />
+        <span>Gaming</span>
+      </div>
+      <div class="hobby-item">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3b5.png" alt="Music Note" />
+        <span>Music</span>
+      </div>
+      <div class="hobby-item">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f30d.png" alt="Globe" />
+        <span>Travel</span>
+      </div>
+      <div class="hobby-item">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f58c.png" alt="Art Palette" />
+        <span>Drawing</span>
+      </div>
+      <div class="hobby-item">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3c3.png" alt="Running" />
+        <span>Running</span>
+      </div>
+    </div>
+  </section>
+  <main style="max-width: 700px; margin: 2em auto; background: #fff; border-radius: 12px; padding: 1.5em;">
+    <p>For today's warmup, I found this inspiring website: 
+      <a href="https://www.swyx.io" target="_blank" rel="noopener">https://www.swyx.io</a>
+    </p>
+    <p>I really like this site because it feels like a genuine personal journal and showcases the creator’s ongoing journey and learning.</p>
+  </main>
+  <nav>
+    <ul>
+      <li><a href="projects/recipes/index.html">Family Recipes Project</a></li>
+    </ul>
+  </nav>
 </body>
+</html>
+
+
