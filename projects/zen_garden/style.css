@@ -1,0 +1,15 @@
+/*
+  ITD110 Zen Garden Project
+  Your name:
+  Your design concept (one sentence):
+
+  All of your CSS goes in this file.
+*/
+body {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  background: #10141a;
+  color: #e0e6ed;
+  margin: 0;
+  padding: 0;
+}
+
