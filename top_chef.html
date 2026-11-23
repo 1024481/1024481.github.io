@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gabes Tacos</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; min-height: 100vh; /* vh */ }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 1.15rem; margin-bottom: 0.3rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.3rem; }
+    button { padding: 0.5rem 1.5rem; border: none; border-radius: 5px; /* px */ background: #333; color: #fff; cursor: pointer; }
+    nav { display: flex; gap: 1rem; }
+    nav a { text-decoration: none; color: inherit; }
+    article { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    /* Layout */
+    .c1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem; /* rem */
+    }
+    .c2 {
+      padding: 2rem; /* rem */
+      text-align: center;
+      background: #fff4e6;
+    }
+    .c3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      padding: 2rem; /* rem */
+    }
+    .c4, .c5, .c6, .c8, .c9, .c10, .c11 {
+      padding: 0.5rem;
+      background: #fff;
+    }
+    .c7 { padding: 0.5rem; text-align: center; background: #d7263d; color: #fff; }
+    .taco-emoji {
+      display: inline-block;
+      transform: rotate(180deg);
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+    .about-section {
+      grid-column: span 3;
+      background: #ffe7ba;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .top-sellers-section {
+      grid-column: span 3;
+      background: #fbeee6;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 700px) {
+      .c3 { grid-template-columns: 1fr; }
+      .about-section, .top-sellers-section { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <button aria-label="Menu">&#9776;</button>
+  <button>About Us</button>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Location</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<section>
+  <div class="c2">
+    <h1><span class="taco-emoji">&#129414;</span>Gabes Tacos</h1>
+    <p>Welcome to Gabes Tacos. We’re your neighborhood taco truck in Times Square, serving up good food and friendly service every day. Hungry? Check out our menu below.</p>
+    <button>See Menu</button>
+  </div>
+</section>
+<section class="c3">
+  <div class="about-section">
+    <h2>About Gabes Tacos</h2>
+    <p>At Gabes Tacos, we believe tacos make everything better. Our family started this food truck to bring something new to our New York neighbors and visitors from all over. We use fresh ingredients in everything we serve.</p>
+    <p>People enjoy our bright red truck, our creative specials, and the way we make everyone feel at home. Stop by for lunch, dinner, or just because you want something delicious.</p>
+  </div>
+  <div class="top-sellers-section">
+    <h3>Top Sellers</h3>
+    <ul>
+      <li>Taco de Pato (Duck Taco) – rich, savory, and unforgettable</li>
+      <li>Taco de Cerdo (Pork Taco) – sweet and spicy, always a hit</li>
+      <li>Taco de Camarón (Shrimp Taco) – light, bright, and full of flavor</li>
+    </ul>
+  </div>
+  <article class="c4">
+    <h2>Taco de Pato</h2>
+    <p>Our famous duck taco is slow-cooked until it’s tender, then topped with sautéed onions and smoky chipotle sauce. It’s the one everyone talks about.</p>
+  </article>
+  <article class="c5">
+    <h2>Taco de Pollo</h2>
+    <p>Grilled chicken that’s juicy and full of flavor, with tomato, cilantro, and a sprinkle of queso fresco. Simple, classic, and tasty.</p>
+  </article>
+  <article class="c6">
+    <h2>Taco de Res</h2>
+    <p>This beef taco is loaded with juicy steak strips, fresh onion, green salsa, and cilantro. Comfort food with a kick.</p>
+  </article>
+  <article class="c8">
+    <h2>Taco de Cerdo</h2>
+    <p>Our pork al pastor is marinated in chili and pineapple, then grilled just right. Sweet, spicy, and a crowd-pleaser.</p>
+  </article>
+  <article class="c9">
+    <h2>Taco de Cordero</h2>
+    <p>If you’re in the mood for something different, try our lamb taco. It’s tender, herby, and comes with mild red salsa on a warm tortilla.</p>
+  </article>
+  <article class="c10">
+    <h2>Taco de Pescado</h2>
+    <p>Crispy fried fish, crunchy cabbage, chipotle-lime crema, and a squeeze of fresh lime. Great for a sunny day or any day.</p>
+  </article>
+  <article class="c11">
+    <h2>Taco de Camarón</h2>
+    <p>Shrimp sautéed in garlic and butter, topped with pico de gallo and creamy avocado slices. Bright, fresh, and satisfying.</p>
+  </article>
+  <article class="c7">
+    <h2>Find Us</h2>
+    <p>You can’t miss our bright red truck at Times Square, right on the corner of 7th Ave and 44th St, New York City. Come say hi.</p>
+  </article>
+</section>
+<footer class="c7">
+</footer>
+<script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+</script>
+</body>
+</html>
+
+
